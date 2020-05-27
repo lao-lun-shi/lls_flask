@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <head charset="UTF-8">
+    <title>图书列表</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <h1>图书列表</h1>
+    <table border="1">
+    {% for book in books %}     
+        <tr>
+            <td>{{ book.title}}</td>
+            <td>{{ book.price}}</td>
+            <td>{{ book.author}}</td>
+            <td>{{ book.publisher}}</td>
+        </tr>
+    {% endfor %}
+    <img src="/static/images/danai.jpg" alt="jobs">
+    <p>我要操妹子</p>
+</body>
+</html>
